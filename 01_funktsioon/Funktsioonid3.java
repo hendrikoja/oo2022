@@ -14,6 +14,10 @@ public class Funktsioonid3{
 	}
 	
 	public static void main(String[] args){
-		System.out.println(newton_sqrt(16));
+		if (args.length > 0){
+			double a = Double.parseDouble(args[0]);
+			
+			System.out.println(newton_sqrt(a));
+		}
 	}
 }
